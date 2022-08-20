@@ -1,0 +1,95 @@
+/* Select all 'p' elements in the document */
+p {
+  /* Some css */
+}
+
+/* Select all elements having class 'item' in the document */
+.item {
+  /* Some css */
+}
+
+/* Select element with id 'container' in the document */
+#container {
+  /* Some css */
+}
+
+/* Select all 'a' are children of 'ul' in the document */
+ul a {
+  /* Some css */
+}
+
+/* Select all 'a' are children of 'ul' having class 'wrapper' in the document */
+ul.wrapper a {
+  /* Some css */
+}
+
+/* Select all 'p' immediately preceded by the 'ul' element */
+ul + p {
+  /* Some css */
+}
+
+/* Select all 'ul' direct children of 'div' having id container */
+div#container > ul {
+  /* Some css */
+}
+
+/* Select all 'p' following 'ul' */
+ul ~ p {
+  /* Some css */
+}
+
+/* ATTRIBUTE SELECTORS */
+
+/* Select all 'p' with title attribute */
+p[title] {
+  /* Some css */
+}
+
+/* Select all 'a' containing href having value start with 'https' */
+a[href^="https"] {
+  /* Some css */
+}
+
+/* Select all 'a' containing href having value end with '.com' */
+a[href$=".com"] {
+  /* Some css */
+}
+
+/* Pseudo Class */
+/* Select all 'div' not having id container */
+div:not(#container) {
+  /* Some css */
+}
+
+/* Pseudo Class */
+/* Select all 'a' not visited yet */
+a:link {
+  /* Some css */
+}
+
+/* Select all visited 'a' */
+a:visited {
+  /* Some css */
+}
+
+/* Pseudo Class */
+/* Select all 'div' hovered */
+div:hover {
+  /* Some css */
+}
+
+/* Pseudo Class */
+/* Select all 'div' not having id container */
+p::first-line {
+  /* Some css */
+}
+
+p::after {
+  content: "aa";
+}
+
+/* Pseudo Element */
+/* Select all 'div' hovered */
+p::first-letter {
+  /* Some css */
+}

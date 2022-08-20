@@ -1,0 +1,59 @@
+/* top, left, bottom, right */
+div:not(#header) {
+  border: 1px solid green;
+  width: 200px;
+  height: 200px;
+}
+div.first {
+  position: relative;
+  left: 20px;
+  top: 100px;
+}
+div.second {
+  background-color: brown;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 20px;
+  left: 20px;
+}
+
+div.parent {
+  background-color: aqua;
+  border: 1px solid green;
+  position: relative;
+}
+
+div#header {
+  height: 100px;
+  background-color: brown;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+p {
+  position: sticky;
+  top: 100px;
+}
+
+.bg-prop{
+  width: 600px !important;
+  height: 200px !important;
+  border: 1px solid green;
+  position: absolute;
+  left: 800px;
+  top: -1000px;
+  background-image: url("../images/tick.png");
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  background-position: top;
+  overflow-y: scroll;
+  font-size: 30px;
+  background-attachment: local;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
