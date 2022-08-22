@@ -31,6 +31,10 @@ console.log(firstresult);
 const secondresult = addTwoNumber(100,200);
 console.log(secondresult);
 
+let number = 10;
+number = 50;
+console.log(number);
+
 //number
 //string
 
@@ -40,3 +44,19 @@ console.log(secondresult);
 
 //Primitive --  Number, string
 //Non-primitive -- Array, Object, Function
+
+number = 40;
+
+if(number === 50){
+    console.log('value if fifty');
+}else{
+    console.log("value is not fifty");
+}
+
+//Ternary operator
+ const isValueFifty =
+ number === 50 ?true :false;
+
+ // const output  = condition ? '' : '';
+
+console.log(isValueFifty);
