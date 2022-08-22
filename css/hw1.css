@@ -28,12 +28,26 @@
 #inside{
     border-radius: 10px;
     height: 50px;
-    width: 97%;
-    border: solid orange;
+    width: 100%;
+    background-color:skyblue;
+    text-align: center;
+}
+
+#inside1{
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+    background-color: greenyellow;
+    text-align: center;
+}
+#inside2{
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
     background-color:lightgoldenrodyellow;
     text-align: center;
 }
 #inside h2{
     text-align: center;
-    color:  green;
+    color: black;
 }
