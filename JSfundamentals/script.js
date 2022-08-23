@@ -1,4 +1,4 @@
-const interestRate = "16%";
+/*const interestRate = "16%";
 console.log(interestRate);
 
 const myCountry = "Nepal";
@@ -59,4 +59,67 @@ if(number === 50){
 
  // const output  = condition ? '' : '';
 
-console.log(isValueFifty);
+console.log(isValueFifty); */
+
+//Global scope
+//Function scope
+//Block scope
+
+//const
+//let
+//var
+
+//Hoisting -- 
+
+const firstname = "Alex";
+
+function calcAge(birthyear){
+//    const age = 40;
+
+//    if(birthyear > 1980){
+//     var add = function (a,b){
+//         console.log(a+b);
+//     }
+//    }
+//    add(10,20);
+
+const firstname = "David";
+console.log(firstname);
+}
+
+calcAge(1990);
+console.log(firstname);
+
+// if(10){
+//     console.log("I am printing truthy result");
+// }else{
+//     console.log("I am printing falsy result");
+// }
+
+//0,'',false, undefined,null,NaN
+
+// if(true)
+// {
+//     var age = 30;
+//     console.log(firstname);
+// }
+
+// console.log(age);
+
+//Function Declaration
+// function addDec(a,b){
+//     console.log(a+b);
+// }
+// addDec(10,20);
+
+// //Function Expression
+// const addExp = function(a,b){
+//     console.log(a+b);
+// }
+// addDec(10,20);
+
+// // Arrow Funtion
+// const addArr =  (a,b) =>{
+//     console.log(a+b);
+// }
+// addDec(10,20);
