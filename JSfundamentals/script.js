@@ -1,31 +1,33 @@
-let langauge = 'Python';
-let oldlanguage = langauge;
-langauge = 'JavaScript';
+// for loop
+// for of 
+// for in 
+// while
 
-console.log(langauge);
-console.log(oldlanguage);
+// for each
+// Map
+// Filter 
+// reduce 
 
-const development = {
-    frontend: "JavaScript",
-    backend: "Java",
-};
+// for(let i=0; i<5; i++){
+//     console.log(arr[i]);
+// }
 
-console.log(development);
+// for(number of arr){
+//     console.log(number);
+// }
 
-const newDevelopment = development;
-console.log(newDevelopment);
+// function display(a){
+//     // console.log(a);
+//     a(10);
+// }
 
-newDevelopment.backend ="Node.js";
-console.log(newDevelopment);
-console.log(development);
+// display(function (number){
+//     console.log(number);
+// });
 
-// document.querySelector(".root").textContent ="New Hello";
-// document.querySelector("div.root").textContent="modified";
-// console.dir(document);
-// document.bgColor = "red";
+const arr = [11,12,13,14,15,16,17,18,19,20];
 
-const heading = document.querySelector("h1");
-// console.dir(heading);
-heading.style.color ="red";
+//console.log(arr);
 
+arr.forEach((number)=>{console.log(number)});
 
