@@ -52,6 +52,8 @@ p{
  }
  .container-3{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
  }
  
  .container div, .container-2 div, .container-3 div{
