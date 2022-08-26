@@ -1,21 +1,19 @@
 
 .outer{
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-wrap: wrap;  
+  justify-content: center;
 }
 
 .inner{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
     border-radius: 10px;
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     margin: 10px;
-    border: solid orange;
+    border: solid black;
 }
 
 div.inside{
@@ -26,14 +24,19 @@ div.inside{
     width: 100%;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
+    align-items: center;
+    justify-content: center;
+    
 }
 div.inside1{
     display: flex;
     background-color: rgb(0, 255, 242);
     height: 50px;
     width: 100%;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    align-items: center;
+    justify-content: center;
 }
 div.inside2{
     display: flex;
@@ -42,17 +45,23 @@ div.inside2{
     width: 100%;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
+    align-items: center;
+    justify-content: center;
 }
 
-div .header h2{
+header{
     display: flex;
     background-color: aqua;
     justify-content: center;
     align-items: center;
 }
 
-div .body{
-    background-color: aquamarine;
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h3{
     display: flex;
     justify-content: center;
     align-items: center;
