@@ -1,139 +1,73 @@
-// // for loop
-// // for of 
-// // for in 
-// // while
+//"use strcit"
 
-// // for each
-// // Map
-// // Filter 
-// // reduce 
-
-// // for(let i=0; i<5; i++){
-// //     console.log(arr[i]);
-// // }
-
-// // for(number of arr){
-// //     console.log(number);
-// // }
- 
-// // function display(a){
-// //     // console.log(a);
-// //     a(10);
-// // }
-
-// // display(function (number){
-// //     console.log(number);
-// // });
-
-// //const arr = [11,12,13,14,15,16,17,18,19,20];
-
-// //console.log(arr);
-
-// //arr.forEach((number)=>{console.log(number)});
+// this keyword
+// console.log(this);
 
 // const obj = {
-//     name : "Dorje",
-//     age : 30,
-//     favNumber:[1,2,3,4],
-//     calcAge : function(){
-//         console.log("Runing");
-//         return "Your age";
-//     },
-//     freeHours: {
-//         hourOne : "six-seven",
-//         hourTwo: 2100,
-//         allHours:[1800,1900,2100],
+//     name: "Dorje",
+//     age: 21,
+//     calcAge: function(){
+//         console.log(this);
 //     },
 // };
 
-// // const firstHour = obj.freeHours.hourOne;
-// // console.log(firstHour);
+// obj.calcAge();
 
-// const AvailableHours=obj.freeHours.allHours[0];
-// console.log(AvailableHours);
-
-// //Spread operator [,,,,something],
-// const {age :myage,favNumber, freeHours:{hourOne,allHours:[firstHour],}} = obj;
-// console.log(myage);
-// console.log(favNumber);
-// console.log(firstHour);
-
-// const arr = [1,2,3,40,[1,2]];
-
-// // const[a,b,c,d,e] = arr;
-
-// // console.log(a,b,c,d,e);
-
-// // console.log(...arr); Rest operator
-
-// const arrOne =[1,2,3,4];
-// const arrTwo =[5,6,7,8];
-
-// const arrThree = arrOne.concat(arrTwo);
-
-// console.log(arrThree);
-
-// console.log([...arrOne, ...arrTwo]); // Rest parameter = rest of the other elements
-
-// const[first,...two]= arrOne; // Rest parameter- rest of the array elements
-// console.log(two);
-
-// function displayArray(...a){
-//     console.log(...a);
+// function add(){
+//     console.loog(this);
 // }
 
-// displayArray(1,2,3,[1, 2], "hello");
+// add();
 
-//Map method
-const arr = [10,20,30,40];
+// const private = "Hospital One";
+// console.log(private);
 
-let newArr = [];
-console.log(newArr);
+// const myName = "Dorje";
 
-// const resultforeach = arr.forEach(element => {
-    
-// });((el,i,array)=>{
-//     newArr.push(el);
-//     // console.log(i);
-//     // console.log(el);
-//     // console.log(array);
-//     return el *2;
-// });
+const obj = {
+    name: "Dorje",
+    age: 21,
+    calcAge: function(){
+        console.log(this);
+    },
+    favNumbers: {
+        firstNumber: 0,
+        secondNumber: 2,
+    }
+};
 
-// console.log(resultforeach);
+console.log(obj.favNumbers?.firstNumber);
 
-const resultmap = arr.map((el,i,array)=>{
-    // newArr.push(el);
-    // console.log(i);
-    // console.log(el);
-    // console.log(array);
-    return el *2;
-});
+//short curcuiting in java script
+//nulliesh coalesing operator ==== ???
 
- console.log(resultmap);
+// ?? 
+// 0, false, null, undefined, NaN, ''
 
-// console.log(newArr);
+// const totalNumber = false;
 
-const add = () => {}
+// //short circuiting operator
+// const totalProduct = totalNumber && 20;
 
-//filter
-//reduce  
+// console.log(totalNumber);
 
-//Filter method
-const filterOutput = arr.filter((el,i,array) => {
-    // console.log(i);
-    // console.log(el);
-    // console.log(array);
-    return el > 20;
-})
+// if(totalProduct)
+// {
+//     console.log("You have total products");
+// }else{
+//     console.log("You don't have total number");
+// }
 
-console.log(filterOutput);
+// ||or looks for truthy value and executes
+// && and looks for falsely value and executes
 
-//Filter method
-const reduceOutput = arr.reduce((acc,currentValue) => {
-    console.log(acc);
-    console.log(currentValue);
-    return acc + currentValue;
-},0);
+//console.log(false && 0 && 100 && null) == false
+//console.log(false || 0 || 100 || null)) == 100
 
-console.log(reduceOutput);
+//strings are truthy value
+
+obj.totalNumber = 0;
+
+const number = obj.totalNumber ?? 100;
+
+console.log(number);

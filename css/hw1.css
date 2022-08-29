@@ -1,11 +1,17 @@
 
 .outer{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   display: flex;
   flex-wrap: wrap;  
   justify-content: center;
+  align-items: center;
+  padding: auto;
 }
 
-.inner{
+.inner1{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -13,7 +19,27 @@
     width: 200px;
     height: 200px;
     margin: 10px;
-    border: solid black;
+    border: solid yellow;
+}
+.inner2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: solid rgb(0, 255, 242);;
+}
+.inner3{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: solid rgb(255, 170, 0);
 }
 
 div.inside{
@@ -54,16 +80,14 @@ header{
     background-color: aqua;
     justify-content: center;
     align-items: center;
+    align-content: center;
 }
 
 .body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-h3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    align-content: center;
 }
 
