@@ -16,8 +16,8 @@
     flex-direction: column;
     flex-wrap: wrap;
     border-radius: 10px;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     margin: 10px;
     border: solid yellow;
 }
@@ -26,8 +26,8 @@
     flex-direction: column;
     flex-wrap: wrap;
     border-radius: 10px;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     margin: 10px;
     border: solid rgb(0, 255, 242);;
 }
@@ -36,8 +36,8 @@
     flex-direction: column;
     flex-wrap: wrap;
     border-radius: 10px;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     margin: 10px;
     border: solid rgb(255, 170, 0);
 }

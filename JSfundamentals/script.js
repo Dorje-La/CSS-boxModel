@@ -1,73 +1,74 @@
-//"use strcit"
 
-// this keyword
-// console.log(this);
-
-// const obj = {
-//     name: "Dorje",
-//     age: 21,
-//     calcAge: function(){
-//         console.log(this);
-//     },
+// //Constructor Function
+// const Person = function(firstnName){
+//     this.first = firstnName;
+//     // this.calcAge = function(birthYear){
+//     //     return birthYear - 2022;
+//     // }
 // };
 
-// obj.calcAge();
+// const alexObj = new  Person("Alex");
+// console.log(alexObj);
 
-// function add(){
-//     console.loog(this);
+// console.log(Person.prototype);
+
+// Person.prototype.calcAge = function(birthYear){
+//     return 2022 - birthYear;
+// };
+
+// console.log(alexObj.calcAge(1990));
+
+// const newObj = new  Person("Prashant");
+// console.log(newObj);
+
+// const newObject = {
+//     a : 1,
+// };
+
+// console.log(newObject);
+
+// console.dir(document);
+
+// console.log(new Set());
+// console.log(new Map());
+
+// ES6 Classes
+
+// class Person {
+//     constructor(firstName,birthYear){
+//         this.first = firstName;
+//         this.birthDate = birthYear;
+//     }
+//     calcAge(){
+//         return 2022 - this.birthDate;
+//     }
+//     add(a,b){
+//         return a + b;
+//     }
 // }
 
-// add();
+// const objAlex = new Person("Alex",1990);
 
-// const private = "Hospital One";
-// console.log(private);
+// console.log(objAlex.add(10,20));
 
-// const myName = "Dorje";
+// const myCountry = "Nepal";
+// console.log(myCountry.toUpperCase());
 
-const obj = {
-    name: "Dorje",
-    age: 21,
-    calcAge: function(){
-        console.log(this);
-    },
-    favNumbers: {
-        firstNumber: 0,
-        secondNumber: 2,
-    }
-};
+"use strict"
 
-console.log(obj.favNumbers?.firstNumber);
+console.log("Runing 1");
 
-//short curcuiting in java script
-//nulliesh coalesing operator ==== ???
+ async function add(){
+    await fetch("http://localhost:550");
+    console.log("Runing 2");
+}
 
-// ?? 
-// 0, false, null, undefined, NaN, ''
+console.log("Runing 3");
 
-// const totalNumber = false;
+add();
 
-// //short circuiting operator
-// const totalProduct = totalNumber && 20;
+console.log("Runing 4");
 
-// console.log(totalNumber);
-
-// if(totalProduct)
-// {
-//     console.log("You have total products");
-// }else{
-//     console.log("You don't have total number");
-// }
-
-// ||or looks for truthy value and executes
-// && and looks for falsely value and executes
-
-//console.log(false && 0 && 100 && null) == false
-//console.log(false || 0 || 100 || null)) == 100
-
-//strings are truthy value
-
-obj.totalNumber = 0;
-
-const number = obj.totalNumber ?? 100;
-
-console.log(number);
+for( let i = 0; i< 10; i++){
+    console.log(i);
+}
