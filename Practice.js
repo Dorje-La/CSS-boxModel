@@ -205,3 +205,74 @@ if(true){
     console.log(this);
 }
 
+
+
+//Constructor Function
+//A class constructor is a special member function of a class that is executed whenever we create new objects of that class
+const Person1 = function(firstnName){
+    this.first = firstnName;
+    // this.calcAge = function(birthYear){
+    //     return birthYear - 2022;
+    // }
+};
+
+const alexObj = new  Person1("Alex");
+console.log(alexObj);
+
+console.log(Person1.prototype);
+
+Person1.prototype.calcAge = function(birthYear){
+    return 2022 - birthYear;
+};
+
+console.log(alexObj.calcAge(1990));
+
+// can use the prototype of function
+const newObj = new  Person1("Prashant");
+console.log(newObj);
+
+// can be used to see all the prototype of tge function
+console.dir(document);
+
+//ES6 Classes
+
+class Person2 {
+    constructor(firstName,birthYear){
+        this.first = firstName;
+        this.birthDate = birthYear;
+    }
+    calcAge(){
+        return 2022 - this.birthDate;
+    }
+    add(a,b){
+        return a + b;
+    }
+}
+
+// using function prototype
+const objAlex = new Person2("Alex",1990);
+
+console.log(objAlex.add(10,20));
+
+//transforming to upper case
+const myCountry = "Nepal";
+console.log(myCountry.toUpperCase());
+
+"use strict"
+
+console.log("Runing 1");
+
+ async function add(){
+    await fetch("http://localhost:550");
+    console.log("Runing 2");
+}
+
+console.log("Runing 3");
+
+add();
+
+console.log("Runing 4");
+
+for( let i = 0; i< 10; i++){
+    console.log(i);
+}
